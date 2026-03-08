@@ -117,10 +117,19 @@ transform:translateY(110vh) rotate(360deg);
 Открыть поздравление 🎁
 </button>
 
+<button class="button" onclick="showSecondMessage()">
+Получить приглашение💌
+</button>
+
 <div class="hiddenMessage" id="message">
 Пусть эта весна принесёт вдохновение, радость и новые яркие события.  
 Желаю хорошего настроения, лёгких дней и побольше поводов для улыбки! 🌸
 Егор
+</div>
+<div class="hiddenMessage" id="secondMessage">
+Приглаю тебя завтра посетить одно очень интересное место, все подробности узнаешь только завтра.<br><br>
+                                9 Марта в 14:00<br><br>
+        Быть готовой с хорошим настроением, заберу на комфортном транспортном средстве(не трамвай)
 </div>
 
 <div class="gallery">
@@ -163,6 +172,9 @@ f.style.fontSize=(20+Math.random()*20)+"px"
 
 document.body.appendChild(f)
 
+}
+function showSecondMessage(){
+document.getElementById("secondMessage").style.display="block"
 }
 
 </script>
